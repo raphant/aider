@@ -72,8 +72,9 @@ class GitRepo:
         if not commit_message:
             commit_message = "(no commit message provided)"
 
-        if prefix:
-            commit_message = prefix + commit_message
+        # Prefix removed as per user request
+        # if prefix:
+        #     commit_message = prefix + commit_message
 
         full_commit_message = commit_message
         if context:
