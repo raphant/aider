@@ -2,6 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import ChatHistory from './components/ChatHistory/ChatHistory';
+import CodeDisplay from './components/CodeDisplay/CodeDisplay';
+// Import additional components as needed
 
 function App() {
   const [messages, setMessages] = useState([]);
@@ -18,7 +21,9 @@ function App() {
 
   return (
     <div className="App">
-      {/* Render chat messages and input form */}
+      <ChatHistory messages={messages} />
+      <CodeDisplay />
+      {/* Render input form and other components as needed */}
     </div>
   );
 }
