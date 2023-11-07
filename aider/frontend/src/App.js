@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import ChatHistory from './components/ChatHistory/ChatHistory';
-import CodeDisplay from './components/CodeDisplay/CodeDisplay';
+import ChatHistory from './components/ChatHistory';
+// CodeDisplay import will be removed in the next step
 // Import additional components as needed
 
 function App() {
